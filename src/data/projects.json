@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Sistema de Microservicios",
+    "description": "Arquitectura distribuida para gestión de inventario y pedidos con Spring Boot y base de datos relacional.",
+    "technologies": ["Java", "Spring Boot", "Oracle SQL", "Docker"],
+    "image": "https://picsum.photos/600/400?random=1",
+    "link": "https://github.com"
+  },
+  {
+    "id": 2,
+    "title": "Plataforma Web E-commerce",
+    "description": "Frontend reactivo con catálogo dinámico, carrito de compras y diseño responsive.",
+    "technologies": ["React", "JavaScript", "Bootstrap", "CSS3"],
+    "image": "https://picsum.photos/600/400?random=2",
+    "link": "https://github.com"
+  },
+  {
+    "id": 3,
+    "title": "Pipeline de Procesamiento de Datos",
+    "description": "Script de extracción, transformación y limpieza de datos estadísticos con exportación estructurada.",
+    "technologies": ["Python", "Pandas", "NumPy"],
+    "image": "https://picsum.photos/600/400?random=3",
+    "link": "https://github.com"
+  }
+]

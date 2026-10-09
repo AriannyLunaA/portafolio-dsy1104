@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Implementación de Arquitectura de Microservicios",
+    "date": "2026-09-15",
+    "summary": "Finalización de la integración de endpoints REST y balanceo de carga para el entorno de pruebas."
+  },
+  {
+    "id": 2,
+    "title": "Optimización de Pipelines de Datos con Python",
+    "date": "2026-10-02",
+    "summary": "Reducción del tiempo de procesamiento en un 30% mediante vectorización en NumPy y DataFrames de Pandas."
+  }
+]
