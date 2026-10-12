@@ -1,32 +1,53 @@
+import { useState } from 'react';
+
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeNavbar = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container">
-        <a className="navbar-brand fw-bold" href="#inicio">Mi Portafolio</a>
+        <a className="navbar-brand fw-bold" href="#inicio" onClick={closeNavbar}>
+          Mi Portafolio
+        </a>
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={toggleNavbar}
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#inicio">Introducción</a>
+              <a className="nav-link" href="#inicio" onClick={closeNavbar}>
+                Introducción
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#proyectos">Proyectos</a>
+              <a className="nav-link" href="#proyectos" onClick={closeNavbar}>
+                Proyectos
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#noticias">Noticias</a>
+              <a className="nav-link" href="#noticias" onClick={closeNavbar}>
+                Noticias
+              </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contacto">Contacto</a>
+              <a className="nav-link" href="#contacto" onClick={closeNavbar}>
+                Contacto
+              </a>
             </li>
           </ul>
         </div>

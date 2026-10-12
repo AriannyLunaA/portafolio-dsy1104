@@ -1,0 +1,59 @@
+/* Paleta floral y rosado pastel */
+:root {
+  --floral-primary: #8e44ad;
+  --floral-secondary: #d980fa;
+  --floral-accent: #b53471;
+  --bg-pastel-rosado: linear-gradient(135deg, #fff0f5 0%, #fce4ec 50%, #f8bbd0 100%);
+  --text-dark-berry: #4a154b;
+}
+
+/* Cabecera / Sección Introducción en rosado claro */
+.hero-floral,
+.hero-rosado {
+  background: var(--bg-pastel-rosado);
+  color: var(--text-dark-berry);
+}
+
+.hero-floral h1,
+.hero-rosado h1,
+.hero-floral p,
+.hero-rosado p,
+.hero-floral a,
+.hero-rosado a {
+  color: var(--text-dark-berry) !important;
+}
+
+.hero-floral a:hover,
+.hero-rosado a:hover {
+  color: #833471 !important;
+}
+
+/* Botones personalizados con contraste correcto */
+.btn-floral {
+  background-color: var(--floral-accent);
+  border-color: var(--floral-accent);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-floral:hover {
+  background-color: #833471;
+  border-color: #833471;
+  color: #ffffff;
+}
+
+.btn-outline-floral {
+  color: var(--floral-accent);
+  border-color: var(--floral-accent);
+}
+
+.btn-outline-floral:hover {
+  background-color: var(--floral-accent);
+  border-color: var(--floral-accent);
+  color: #ffffff;
+}
+
+/* Fondo suave para secciones alternas */
+.bg-pastel-light {
+  background-color: #fff9fb;
+}

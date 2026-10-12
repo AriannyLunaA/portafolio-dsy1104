@@ -24,7 +24,8 @@ export default function App() {
     name: "Luna",
     role: "Ingeniería en Informática | Backend & Data",
     bio: "Bienvenida a mi portafolio personal donde comparto mis proyectos de desarrollo de software, arquitecturas y últimas noticias técnicas.",
-    githubUrl: "https://github.com"
+    githubUrl: "https://github.com",
+    avatar: "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=500&auto=format&fit=crop&q=80"
   };
 
   return (
@@ -36,6 +37,7 @@ export default function App() {
           role={profile.role}
           bio={profile.bio}
           githubUrl={profile.githubUrl}
+          avatar={profile.avatar}
         />
         <Projects projects={projects} />
         <News newsList={news} />

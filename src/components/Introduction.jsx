@@ -1,10 +1,10 @@
-export default function Introduction({ name, role, bio, githubUrl }) {
+export default function Introduction({ name, role, bio, githubUrl, avatar }) {
   return (
-    <section id="inicio" className="py-5 text-center bg-primary text-white">
+    <section id="inicio" className="py-5 text-center hero-floral"> 
       <div className="container">
         <div className="mb-4">
           <img
-            src="https://picsum.photos/160/160?random=10"
+            src={avatar}
             alt={`Foto de perfil de ${name}`}
             className="rounded-circle border border-3 border-white shadow"
             width="160"
